@@ -1,11 +1,4 @@
-<div align="center">
-<img width="120px"  src="https://raw.githubusercontent.com/no-te-rindas/logo/main/Logo/LeonidasEsteban-destello-envolvente-cuadrada.png" />
-</div>
-
-# Portafolio Jaume
-
-Muestra tus mejores proyectos acompañados de una paleta de colores azules vibrantes. Además añade opiniones o reviews de tu trabajo para humanizarte.
-
+# Portafolio Jimy Cox
 ## Desktop
 
 <img width="400px"  src="https://github.com/no-te-rindas/imagenes/blob/main/Readmes/portafolio-jaume/jaume-desktop.png?raw=true" />
