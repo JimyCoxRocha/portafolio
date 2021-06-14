@@ -8,4 +8,4 @@
 <img width="200px" src="https://github.com/JimyCoxRocha/portafolio/blob/main/readme-details/Mobile.png?raw=true" />
 
 ## Inspirado por
-Diseñado con ♥️ en leonidasesteban.com
+leonidasesteban.com
