@@ -7,5 +7,5 @@
 
 <img width="200px" src="https://github.com/JimyCoxRocha/portafolio/blob/main/readme-details/Mobile.png?raw=true" />
 
-## Inspirado por
-leonidasesteban.com
+## Creado por
+www.jimycox.codes
