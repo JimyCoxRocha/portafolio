@@ -1,11 +1,55 @@
-.project {
-  padding-block-start: 40px;
-  padding-block-end: 40px;
+
+.wrapper-cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
+.project {
+  margin-top: 0rem;
+  margin-bottom: 40px;
+  background-color: #cbe2f380;
+  border-radius: 0.5rem;
+  padding: 1.18rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 768px){
+  .project{
+    width: unset;
+    flex-basis: calc(50% - 10px);
+  }
+  .list-project-description{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .list-project-description li{
+    display: inline-block;
+    min-width: 120px;
+  }
+  .list-project-description a{
+    flex-basis: calc(50% - 10px);
+  }
+}
+@media screen and (min-width: 1077px){
+  .project{
+      flex-basis: calc(33% - 10px);
+
+  }
+}
+
+.project-image{
+  display: flex;
+  justify-content: center;
+}
 
 .project-image img {
   max-inline-size: 100%;
+  max-width: 250px;
 }
 .project-description {
   display: flex;
@@ -13,21 +57,38 @@
   gap: 16px;
 }
 
-@media screen and (min-width: 768px) {
-  .project {
-    display: flex;
-    align-items: center;
-    gap: 32px;
-    padding-block-start: 80px;
-    padding-block-end: 80px;
-  }
-  .project-description {
-    flex: 1;
+.project-description p{
+  margin: 0rem;
+}
 
+.list-project-description{
+  list-style: none;
+  padding: 0rem;
+  margin: 0rem;
+}
+
+.list-project-description li{
+  margin-bottom: 0.5rem;
+}
+
+.project-description__button{
+  display: flex;
+  flex-direction: column;
+}
+.project-description__button a:last-of-type{
+  margin-top: 1rem;
+}
+
+@media screen and (min-width: 768px){
+  .project-description__button{
+    justify-content: space-evenly;
+    flex-direction: row;
   }
-  .project:nth-child(odd) .project-image {
-    order: 2;
-    flex: 1;
-    text-align: center;
+  .project-description__button a:last-of-type{
+    margin-top: 0rem;
   }
+  
+}
+.project-description .title{
+  margin-top: 19.92px;
 }

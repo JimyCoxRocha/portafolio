@@ -1,5 +1,5 @@
 .button {
-  background: var(--purple);
+  background: var(--colorSecundary);
   color: var(--white);
   font: var(--button);
   padding-inline-start: 24px;
@@ -11,10 +11,18 @@
   border: none;
   text-decoration: none;
   text-align: center;
+  box-shadow: 7px 5px 4px 1px #969696;
+  transition: background 0.5s, border 0.5s, box-shadow 0.3s ease-in-out 0s;
 }
-
+.button:hover{
+  background: #36CC7C;
+  box-shadow: 7px 5px 4px 1px #36cc7c62;
+}
 .button.is-secondary {
   background: unset;
-  color: var(--purple);
-  border: 2px solid var(--purple);
+  color: var(--colorSecundary);
+  border: 2px solid var(--colorSecundary);
+}
+.button.is-secondary:hover{
+  border: 2px solid #36CC7C;
 }

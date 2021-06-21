@@ -1,6 +1,7 @@
 @import "./button.css";
 @import "./button-icon.css";
 @import "./header.css";
+@import "./navBar.css";
 @import "./hero.css";
 @import "./wrapper.css";
 @import "./menu.css";
@@ -9,32 +10,59 @@
 @import "./footer.css";
 @import "./form.css";
 @import "./title.css";
+@import "./wrapper-conocimiento.css";
 
 
 :root {
-  --fontBase: 'Poppins', sans-serif;
-  --headline1: bold 95px/153.71px var(--fontBase);
-  --headline2: bold 59px/95px var(--fontBase);
-  --headline3: bold 48px/77px var(--fontBase);
-  --headline4: bold 34px/55px var(--fontBase);
-  --headline5: bold 24px/38px var(--fontBase);
+  --fontBase: 'Roboto', sans-serif;
+  --headline1: bold 3em/56px var(--fontBase);
+  --headline2: italic 2.25em/40px var(--fontBase);
+  /* --headline3: bold 48px/77px var(--fontBase);
+  --headline4: bold 34px/55px var(--fontBase);*/
+  --headline5: normal 24px/38px var(--fontBase); 
+  --body_title: normal 1.5rem/23.01px var(--fontBase);
   --body1: 16px/25px var(--fontBase);
   --body2: 14px/22px var(--fontBase);
   --button: bold 14px/22px var(--fontBase);
   --caption: 12px/19px var(--fontBase);
+
   --gradient: radial-gradient(41.48% 11.48% at 2.38% 8.52%, #747DE9 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(135deg, #72EDF2 0%, #5151E5 100%);
   --purple: #310A90;
   --green: #42E2B8;
   --white: white;
+  --black: #212529;
+  --colorPrincipal: #FEF5EB;
+  --colorSecundary: #82BEBF;
+  --colorSecundary-black: #558686ad;
+}
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 body {
-  background: var(--gradient);
+  background: var(--colorPrincipal);
   min-block-size: 100vh;
   font: var(--body1);
-  color: var(--purple);
+  color: var(--black);
   margin: 0;
 }
 
-
-
+.container{
+  width: 90%;
+  margin: 0 auto;
+}
+.site-section{
+  padding-top: 2.5rem;
+}
+.title-section{
+  margin: 0;
+  padding-bottom: 0.3rem;
+  color: #969696;
+  box-shadow: 0px 3px 0px #96969631;
+  font: var(--body_title);
+  margin-bottom: 1.7rem;
+}

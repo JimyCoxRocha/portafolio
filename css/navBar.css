@@ -1,0 +1,35 @@
+
+.navBar {
+  overflow: hidden;
+  background-color: var(--colorSecundary);
+}
+.navBar-blur{
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  backdrop-filter: blur(10px);
+  background-color: unset;
+
+}
+
+.navBar-background {
+  background-color: var(--colorSecundary);
+  backdrop-filter: unset;
+}
+.navBar-effect{
+  animation: showNavBar 0.5s forwards;
+  animation-timing-function: ease;
+}
+@keyframes showNavBar {
+  from {width: 0rem;}
+  to {width: 100%;}
+}
+
+.navBar-content {
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  block-size: 80px;
+}

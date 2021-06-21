@@ -6,13 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portafolio de Jimy Cox</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
   <link rel="stylesheet" href="./css/index.css">
 </head>
-<body>
-  <header class="header">
+
+<body onscroll="scrollView()">
+  <div class="navBar" id="navBar">
     <div class="wrapper">
-      <div class="header-content">
+      <div class="navBar-content">
         <img src="./images/LogoJimyCox.png" width="80" height="50" alt="logo Jimy Cox">
         <nav class="menu" aria-label="main-navigation">
           <ul>
@@ -22,6 +24,12 @@
             <li>
               <a href="#project">Proyectos</a>
             </li>
+            <li>
+              <a href="#conocimientos">Conocimientos</a>
+            </li>
+            <li>
+              <a href="#contacto">Contacto</a>
+            </li>
             <!-- <li>
               <a href="#contact">Contáctame</a>
             </li> -->
@@ -30,116 +38,297 @@
         <a class="button" href="https://drive.google.com/file/d/1yaOTUgW-Hh-FtqGG7pjdT4UdjRBrx_FM/view?usp=sharing"  target="_blank">Curriculum</a>
       </div>
     </div>
-  </header>
-  <div class="wrapper">
+  </div>
+  <header class="site-header">
+    
 
+    <div class="wrapper">
+      <section aria-label="main" class="hero" id="main">
+        <div class="hero-image">
+          <img src="./images/jimyCox.png" alt="">
+        </div>
+        
+        <div class="hero-description">
+          <div class="hero-title">
+            <h1>Web Developer</h1>
+            <span>Jimy Cox</span>
+          </div>
 
-    <section aria-label="main" class="hero" id="main">
-      <div class="hero-image">
-        <img src="./images/jimyCox.png" width="338" height="330" alt="">
-      </div>
-      <div class="hero-description">
-        <h1>
-          <span>¡Hola a todos!</span>
-          <span>Soy Jimy</span>
-        </h1>
-        <p>
-          Poseo conocimientos para el desarrollo <strong>Front-End</strong> y <strong>Back-End</strong> de aplicaciones Web. Me considero una persona proactiva que no le teme a los desafíos y los afronta con disciplina.
-        </p>
-        <div class="social">
-          <a class="button-icon" href="https://github.com/JimyCoxRocha" target="_blank"><img src="./icons/icon-github.svg" alt="Github"></a>
-          <a class="button-icon" href="https://www.linkedin.com/in/jimy-cox-rocha-7735261a4/" target="_blank"><img src="./icons/icon-linkedin.svg"></a>
-          <a class="button-icon" href="https://www.facebook.com/AndresBrilliant" target="_blank"><img src="./icons/icon-facebook.svg"></a>
+          <div class="hero-information">
+            <p>
+              Poseo conocimientos para el desarrollo <strong>Front-End</strong> y <strong>Back-End</strong> de aplicaciones Web. Me considero una persona proactiva que no le teme a los desafíos y los afronta con disciplina.
+            </p>
+            <div class="social">
+              <a class="button-icon git" href="https://github.com/JimyCoxRocha" target="_blank"><img src="./icons/icon-github.svg" alt="Github"></a>
+              <a class="button-icon linkedin" href="https://www.linkedin.com/in/jimy-cox-rocha-7735261a4/" target="_blank"><img src="./icons/icon-linkedin.svg"></a>
+              <a class="button-icon facebook" href="https://www.facebook.com/AndresBrilliant" target="_blank"><img src="./icons/icon-facebook.svg"></a>
+            </div>
+            <!-- <a href="https://drive.google.com/file/d/1yaOTUgW-Hh-FtqGG7pjdT4UdjRBrx_FM/view?usp=sharing" class="button"  target="_blank">Mostrar curriculum</a> -->
+          </div>
 
         </div>
-        <a href="https://drive.google.com/file/d/1yaOTUgW-Hh-FtqGG7pjdT4UdjRBrx_FM/view?usp=sharing" class="button"  target="_blank">Mostrar curriculum</a>
-      </div>
-    </section>
 
-    <div class="project" id="project">
-      <div class="project-image">
-        <img src="./images/HeroesApp.png" alt="">
+      </section>
+  </header>
+
+  <main class="container site-section">
+    <h2 class="title-section" id="project">PROYECTOS</h2>
+
+    <div class="wrapper-cards">
+      
+      <div class="project">
+        <div class="project-image">
+          <img src="./images/HeroesApp.png" alt="">
+        </div>
+        
+        <div class="project-description">
+          <h2 class="title">Heroes App</h2>
+          <p>Aplicación de héroes Marvel y DC.</p>
+          <ul class="list-project-description">
+            <li>
+              <p><i class="fas fa-code"></i> <strong>Front-End</strong></p>
+              <p>React JS</p>
+            </li>
+            <li>
+              <p><i class="fas fa-server"></i> <strong>Back-End</strong></p>
+              <p>Node JS</p>
+            </li>
+            <li>
+              <p><i class="fas fa-network-wired"></i> <strong>Servidor</strong></p>
+              <p>Github Pages</p>
+            </li>
+          </ul>
+          <div class="project-description__button">
+            <a target="_blank" href="https://github.com/JimyCoxRocha/HeroesApp" class="button is-secondary">Ver Código</a>
+            <a target="_blank" href="https://jimycoxrocha.github.io/HeroesApp/" class="button">Ver Proyecto</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="project">
+        <div class="project-image">
+          <img src="./images/cellphonesImages.png" alt="" >
+        </div>
+        <div class="project-description">
+          <h2 class="title">Planes de Internet</h2>
+          <p>Prototipo Landing Page: planes de internet TV Cable y Claro. Recibe solicitudes.</p>
+          <ul class="list-project-description">
+            <li>
+              <p><i class="fas fa-code"></i> <strong>Front-End</strong></p>
+              <p>HTML, CSS, JS</p>
+            </li>
+            <li>
+              <p><i class="fas fa-server"></i> <strong>Back-End</strong></p>
+              <p>PHP, MySql</p>
+            </li>
+            <li>
+              <p><i class="fas fa-network-wired"></i> <strong>Servidor</strong></p>
+              <p>Azure</p>
+            </li>
+          </ul>
+          <div class="project-description__button">
+            <a target="_blank" href="https://github.com/JimyCoxRocha/Planes-de-Internet" class="button is-secondary">Ver Código</a>
+            <a target="_blank" href="https://andrescoxrocha.azurewebsites.net/" class="button">Ver Proyecto</a>
+          </div>
+        </div>
+      </div>
+      <div class="project">
+        <div class="project-image">
+          <img src="./images/ipad.png" alt="">
+        </div>
+        <div class="project-description">
+          <a class="title" target="_blank">Bienes Raíces</a>
+          <p>Adquiere alguna de las casas que estamos ofertando en la página de Bienes Raíces</p>
+          <ul class="list-project-description">
+            <li>
+              <p><i class="fas fa-code"></i> <strong>Front-End</strong></p>
+              <p>HTML, CSS, JS</p>
+            </li>
+            <li>
+              <p><i class="fas fa-server"></i> <strong>Back-End</strong></p>
+              <p>No aplica</p>
+            </li>
+            <li>
+              <p><i class="fas fa-network-wired"></i> <strong>Servidor</strong></p>
+              <p>Github Pages</p>
+            </li>
+          </ul>
+          <div class="project-description__button">
+            <a target="_blank" href="https://github.com/JimyCoxRocha/Bienes-Raices" class="button is-secondary">Ver Código</a>
+            <a target="_blank" href="https://jimycoxrocha.github.io/Bienes-Raices/" class="button">Ver Proyecto</a>
+            <!-- <a target="_blank" href="https://jimycoxrocha.github.io/Bienes-Raices/" class="button">Ver Timelapse </a> -->
+          </div>
+        </div>
+  
+      </div>
+    </div>
+    
+  </main>
+  
+  <section class="container site-section">
+    <h2 class="title-section" id="conocimientos">CONOCIMIENTOS</h2>
+
+    <div class="wrapper-cards2">
+      <article class="wrapper-conocimiento">
+        <i class="fab fa-react"></i>
+        <p>React JS</p>
+        <p>Aprendí React js mediante cursos de UDEMY: <a href="https://udemy-certificate.s3.amazonaws.com/image/UC-70a2a60d-2c19-4d6b-98e1-c8bb50943a49.jpg?v=1624048798000" target="_blank">certificado</a></p>
+      </article>
+  
+      <article class="wrapper-conocimiento php">
+        <i class="fab fa-php"></i>
+        <p>PHP</p>
+        <p>Aprendí PHP mediante cursos de Udemy. He desarrollado proyectos. </p>
+      </article>
+  
+      <article class="wrapper-conocimiento node">
+        <div>
+          <i class="fab fa-node-js"></i>
+        </div>
+        <p>Node JS</p>
+        <p>Aprendí Node JS, mediante un curso de Udemy. He desarrollado proyectos creando API's.</p>
+      </article>
+  
+      <article class="wrapper-conocimiento marketing">
+        <div>
+          <i class="fas fa-bullhorn"></i>
+        </div>
+        <p>Marketing Digital</p>
+        <p>Conocimientos que he adquirido mediante el manejo de redes sociales, con los que pude comprar mi computadora de alta gama.</p>
+      </article>
+  
+      <article class="wrapper-conocimiento api">
+        <div>
+          <i class="fas fa-link"></i>
+        </div>
+        <p>Consumir API's</p>
+        <p>En todos mis proyectos he aprendido a consumir API's</p>
+      </article>
+  
+      <article class="wrapper-conocimiento database">
+        <div>
+          <img src="./icons/mysql.svg" alt="mysql">
+          <img src="./icons/sqlserver.svg" alt="Sql Server">
+        </div>
+        <p>DB Relacionales</p>
+        <p>Experiencia al utilizar en proyectos web y de escritorio. Además, también utilizadas en servidores de Azure.</p>
+      </article>
+  
+      <article class="wrapper-conocimiento mongo">
+        <img src="./icons/mongodb.svg" alt="mongoDB">
+        <p>DB No Relacional</p>
+        <p>En mis proyectos he utilizado Mongo DB para la gestión de datos sin estructura.</p>
+      </article>
+      
+      <article class="wrapper-conocimiento python">
+        <img src="./icons/python.svg" alt="python">
+        <p>Python</p>
+        <p>En mis proyectos, desarrollo desde autómatas, hasta levantar servidores.</p>
+      </article>
+  
+      <article class="wrapper-conocimiento static">
+        <div>
+          <i class="fab fa-html5"></i>
+          <i class="fab fa-css3"></i>
+          <i class="fab fa-js"></i>
+        </div>
+        <p>React JS</p>
+        <p>Tengo conocimientos en la "triada" para desarrollar la mayor parte de mis proyectos.</p>
+      </article>
+    </div>
+
+  </section>
+
+  <!-- <form action="" method="POST" class="form">
+    <h2 class="title">Hablemos</h2>
+    <div class="form-content">
+      <p>Si está interesado en trabajar conmigo en su próximo proyecto,
+      no dude en ponerse en contacto conmigo.</p>
+      <label for="form-name">
+        Nombre Completo
+        <input required name="name" id="form-name" type="text" placeholder="juan">
+      </label>
+      <label for="form-name">
+        Correo electrónico
+        <input required name="email" id="form-name" type="email" placeholder="juan">
+      </label>
+      <label for="form-name">
+        Mensaje
+        <textarea required name="message" placeholder="Mensaje" id="form-message" cols="30" rows="7"></textarea>
+      </label>
+      <button class="button" type="submit">Enviar mensaje</button>
+    </div>
+  </form> -->
+
+
+
+
+  <section class="contacto" id="contacto">
+    <form  method="POST" class="form">
+      <h2>Hablemos</h2>
+      <p>Si está interesado en trabajar conmigo en su próximo proyecto,
+      no dude en ponerse en contacto conmigo.</p>
+
+      <div class="info-employer">
+        <div class="form-content">
+          <label for="form-name">
+            Nombre Completo
+            <div class="form-group">
+              <i class="fas fa-user"></i>
+              <input required name="name" id="form-name" type="text" placeholder="Nombre">
+            </div>
+          </label>
+          <label for="form-email">
+            Correo electrónico
+            <div class="form-group">
+              <i class="far fa-envelope"></i>
+              <input required name="email" id="form-email" type="email" placeholder="example@gmail.com">
+            </div>
+          </label>
+          <label for="form-message">
+            Mensaje
+            <div class="form-group">
+              <i class="fas fa-paper-plane"></i>
+              <textarea required name="message" placeholder="Hola!" id="form-message" cols="30" rows="7"></textarea>
+            </div>
+          </label>
+        </div>
+        
+        <img src="./icons/contactme.svg" alt="contact-me" id="icon-contact_me">
+        
       </div>
       
-      <div class="project-description">
-        <h2 class="title">React JS</h2>
-        <p>Aplicación de héroes Marvel y DC.</p>
-        <a target="_blank" href="https://github.com/JimyCoxRocha/HeroesApp" class="button is-secondary">Ver Código</a>
-        <a target="_blank" href="https://jimycoxrocha.github.io/HeroesApp/" class="button">Ver Proyecto</a>
+      <button class="button" type="submit" id="sendMessage" disabled>Enviar mensaje</button>
+    </form>
+  </section>
+
+
+
+  
+
+  <footer class="footer container" id="contact">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <img src="./images/LogoJimyCox.png" width="80" height="50" alt="logo muy bonito">
       </div>
 
+      <div class="social">
+        <a class="button-icon git" href="https://github.com/JimyCoxRocha" target="_blank"><img src="./icons/icon-github.svg" alt="Github"></a>
+        <a class="button-icon linkedin" href="https://www.linkedin.com/in/jimy-cox-rocha-7735261a4/" target="_blank"><img src="./icons/icon-linkedin.svg"></a>
+        <a class="button-icon facebook" href="https://www.facebook.com/AndresBrilliant" target="_blank"><img src="./icons/icon-facebook.svg"></a>
+      </div>
+      <div class="footer-copyright">
+        <p>
+          Created By <strong>Jimy Cox Rocha</strong> ❤️
+        </p>
+        <p>
+          Copyright 2021 - Todos los derechos reservados.
+        </p>
+      </div>
     </div>
+  </footer>
 
-    <div class="project">
-      <div class="project-image">
-        <img src="./images/planesInternet.png" alt="">
-      </div>
-      <div class="project-description">
-        <h2 class="title">PHP / HTLM / CSS / MySql </h2>
-        <p>Prototipo Landing Page: planes de internet TV Cable y Claro. Back-End Implementado en <strong>AZURE</strong></p>
-        <a target="_blank" href="https://github.com/JimyCoxRocha/Planes-de-Internet" class="button is-secondary">Ver Código</a>
-        <a target="_blank" href="https://andrescoxrocha.azurewebsites.net/" class="button">Ver Proyecto</a>
-      </div>
-    </div>
-    <div class="project">
-      <div class="project-image">
-        <img src="./images/ipadImage.png" alt="">
-      </div>
-      <div class="project-description">
-        <a class="title" target="_blank">Javascript / CSS / HTML</a>
-        <p>Adquiere alguna de las casas que estamos ofertando en la página de Bienes Raíces</p>
-        <a target="_blank" href="https://github.com/JimyCoxRocha/Bienes-Raices" class="button is-secondary">Ver Código</a>
-        <a target="_blank" href="https://jimycoxrocha.github.io/Bienes-Raices/" class="button">Ver Proyecto</a>
-      </div>
-
-    </div>
-
-    <!-- <form action="" method="POST" class="form">
-      <div class="form-content">
-        <h2 class="title">Hablemos</h2>
-        <p>Si está interesado en trabajar conmigo en su próximo proyecto,
-        no dude en ponerse en contacto conmigo.</p>
-        <label for="form-name">
-          Nombre Completo
-          <input required name="name" id="form-name" type="text" placeholder="juan">
-        </label>
-        <label for="form-name">
-          Correo electrónico
-          <input required name="email" id="form-name" type="email" placeholder="juan">
-        </label>
-        <label for="form-name">
-          Mensaje
-          <textarea required name="message" placeholder="Mensaje" id="form-message" cols="30" rows="7"></textarea>
-        </label>
-        <button class="button" type="submit">Enviar mensaje</button>
-      </div>
-    </form> -->
-
-    <footer class="footer" id="contact">
-      <div class="footer-content">
-        <div class="footer-logo">
-          <img src="./images/LogoJimyCox.png" width="80" height="50" alt="logo muy bonito">
-        </div>
-
-        <div class="social">
-          <a class="button-icon" href="https://github.com/JimyCoxRocha" target="_blank"><img src="./icons/icon-github.svg" alt="Github"></a>
-          <a class="button-icon" href="https://www.linkedin.com/in/jimy-cox-rocha-7735261a4/" target="_blank"><img src="./icons/icon-linkedin.svg"></a>
-          <a class="button-icon" href="https://www.facebook.com/AndresBrilliant" target="_blank"><img src="./icons/icon-facebook.svg"></a>
-
-        </div>
-        <div class="footer-copyright">
-          <p>
-            Inspirado por Leonidas Esteban ❤️.
-          </p>
-          <p>
-            Copyright 2021 - Todos los derechos reservados.
-          </p>
-        </div>
-      </div>
-    </footer>
-  </div>
-
-<script type="script/Javascript" src="js/main.js"></script>
+<script  src="js/main.js"></script>
 
 </body>
 </html>

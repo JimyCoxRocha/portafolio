@@ -1,0 +1,120 @@
+
+.wrapper-cards2{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/*flex-wrap: wrap;*/
+@media screen and (min-width: 768px){
+/*     .wrapper-cards2{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .wrapper-conocimiento{
+        max-width: 19.87rem;
+
+    } */
+    .wrapper-conocimiento{
+        width: unset;
+        flex-basis: calc(50% - 10px);
+    }
+}
+@media screen and (min-width: 1077px){
+    .wrapper-cards2{
+        justify-content: space-between;
+    }
+    .wrapper-conocimiento{
+        flex-basis: calc(33% - 10px);
+
+    }
+}
+@media screen and (min-width: 1077px){
+    .wrapper-cards2{
+        justify-content: space-between;
+    }
+    .wrapper-conocimiento{
+        flex-basis: calc(33% - 10px);
+    }
+}
+@media screen and (min-width: 1400px){
+    .wrapper-conocimiento{
+        flex-basis: calc(25% - 10px);
+    }
+}
+
+
+.wrapper-conocimiento{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    align-items: center;
+    padding: 1.5rem 2.5rem;
+    box-shadow: -0px -5px 0px -1px #18BCEE;
+    margin-top: 0rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    /*flex-basis: calc(50% - 10px);
+    min-width: 18.31rem;*/
+    width: 100%;
+}
+
+
+
+.wrapper-conocimiento i{
+    font-size: 4rem;
+    color: #18BCEE;
+}
+
+.wrapper-conocimiento p:nth-of-type(1){
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 0;
+    margin-top: 0.8rem;
+}
+.wrapper-conocimiento p:nth-of-type(2){
+    font-size: 1em;
+    text-align: center;
+}
+
+.fab.fa-html5{
+    color: #E75C26;
+}
+.fab.fa-js{
+    color: #F7E018;
+}
+.fab.fa-php{
+    color: #848EBB;
+}
+.fab.fa-node-js{
+    color: #8BBF3D;
+}
+.fas.fa-bullhorn{
+    color: #415471;
+}
+
+.wrapper-conocimiento.php{
+    box-shadow: -0px -5px 0px -1px #848EBB;
+}
+.wrapper-conocimiento.node{
+    box-shadow: -0px -5px 0px -1px #8BBF3D;
+}
+.wrapper-conocimiento.marketing{
+    box-shadow: -0px -5px 0px -1px #415471;
+}
+.wrapper-conocimiento.api{
+    box-shadow: -0px -5px 0px -1px #18BCEE;
+}
+.wrapper-conocimiento.database{
+    box-shadow: -0px -5px 0px -1px #BE3131;
+}
+.wrapper-conocimiento.mongo{
+    box-shadow: -0px -5px 0px -1px #4CAF50;
+}
+.wrapper-conocimiento.python{
+    box-shadow: -0px -5px 0px -1px #FFC107;
+}
+.wrapper-conocimiento.static{
+    box-shadow: -0px -5px 0px -1px #E75C26;
+}
